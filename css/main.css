@@ -1,0 +1,239 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html, h1, h2, h3, h4, h5, h6, a {
+    font-family: “Raleway”;
+}
+
+.navbar {
+    background: #F97300;
+}
+
+.nav-link, .navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    padding-right: 0.3em !important;
+    padding-left: 0.3em !important;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    background: #f4f4f4;
+    color: #f97300;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background: #fff !important;
+}
+
+.page {
+    background-image: url('../images/weather.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    /*background-size: cover;*/
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+.content{
+    position: relative;
+}
+.description {
+    /*position: relative;*/
+    padding-top: 5em;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.description h1 {
+    color: #F97300;
+}
+
+.description p {
+    justify-content: flex-end;
+    color: #666;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h6{
+    font-size: 24px;
+    text-align: center;
+    color: #F97300;
+    position: relative;
+}
+
+/*authorize-form*/
+.authorize-form {
+    /*position: ;*/
+    /*padding-top: 2em;*/
+    /*padding-bottom: 3em;*/
+}
+
+.authorize-form h1 {
+    text-align: center;
+    padding: 2em 1px;
+    color: #F97300;
+}
+
+.authorize-form .right {
+    max-width: 600px;
+}
+
+.authorize-form .right .btn-secondary {
+    background: #F97300;
+    color: #fff;
+    border: 0;
+}
+
+.authorize-form .right .form-control::placeholder {
+    color: #888;
+    font-size: 16px;
+}
+/*contact form*/
+.contact-form {
+    /*position: ;*/
+    padding-top: 15%;
+}
+
+.contact-form h1 {
+    text-align: center;
+    padding: 2em 1px;
+    color: #F97300;
+}
+
+.contact-form .right {
+    max-width: 600px;
+}
+
+.contact-form .right .btn-secondary {
+    background: #F97300;
+    color: #fff;
+    border: 0;
+}
+
+.contact-form .right .form-control::placeholder {
+    color: #888;
+    font-size: 16px;
+}
+
+/*Comments*/
+.comments {
+    padding-top: 10%;
+}
+
+.comments h1 {
+    text-align: center;
+    /*padding: 2em 1px;*/
+    color: #F97300;
+}
+
+.comment span {
+    font-size: 16px;
+    color: black;
+}
+
+.comment .name, .email {
+    font-size: 1.5em;
+    color: #F97300;
+}
+
+.comment .comment-text {
+    margin-top: 0.5em;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid #F97300;
+    margin-bottom: 3em;
+
+}
+
+/*weather*/
+.weather {
+    position: relative;
+    align-self: center;
+    overflow:hidden;
+    border-radius: 20px 2px 20px 2px;
+    /*margin-right: 10%;*/
+    /*margin-left: 10%;*/
+    border: 2px solid #F97300;
+    /*padding: 1em;*/
+    background-color: aliceblue;
+
+}
+.weather .fdate, .fbottom{
+    background-color: #F97300;
+    font-size: 18px;
+    color: white;
+    padding: 7px;
+    /*padding-left: 10px;*/
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
+    margin: 3px
+}
+.weather .fdate {
+    border-radius: 20px 2px 0 0;
+}
+.weather .fbottom{
+    border-radius: 0 0 20px 2px;
+}
+.weather .city-name{
+
+}
+.weather h1{
+    color: #F97300;
+}
+.weather thead{
+    font-size: 12px;
+}
+.weather .wsection{
+    margin: 1em;
+    font-size: 1.2em;
+}
+.weather .wrow{
+    border-top: 1px solid #F97300;
+}
+.weather .fbottom{
+    color: #F97300;
+}
+
+.g-recaptcha{
+    margin: 1em !important;
+    width: 100% !important;
+    height: auto !important;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -o-center;
+    text-align: -ms-center;
+}

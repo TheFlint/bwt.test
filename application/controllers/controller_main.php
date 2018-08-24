@@ -8,13 +8,13 @@
 
 class Controller_Main extends Controller
 {
-    function __construct()
+    public function __construct()
     {
         $this->model = new Model_Main();
         $this->view = new View();
     }
 
-    function action_index()
+    public function action_index()
     {
         session_start();
         if (isset($_SESSION["id"])) {

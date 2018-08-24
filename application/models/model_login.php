@@ -8,7 +8,7 @@
  */
 Class Model_Login extends Model
 {
-    function signIn()
+    public function signIn()
     {
         $access["login_status"] = "";
         if (isset($_POST['g-recaptcha-response'])) {

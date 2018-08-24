@@ -15,7 +15,7 @@ class Controller_SignUp extends Controller
 
     function action_index()
     {
-        $data = $this->model->sign_up();
+        $data = $this->model->signUp();
         $this->view->generate('signup_view.php', 'template_view.php', "Sign Up", $data);
     }
 

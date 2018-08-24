@@ -14,7 +14,7 @@ class Model_Comments extends Model
         $query = $db->query($sql);
         $data = array();
         $i=0;
-        while ($result = $query->fetch(PDO::FETCH_ASSOC)){
+        while ($result = $query->fetch(PDO::FETCH_ASSOC)) {
             $data[$i]=$result;
             $i++;
         }

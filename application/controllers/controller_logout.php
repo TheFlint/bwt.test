@@ -7,7 +7,7 @@
  */
 Class Controller_Logout extends Controller{
 
-    function action_index()
+    public function action_index()
     {
             session_start();
             session_destroy();

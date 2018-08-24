@@ -9,13 +9,13 @@
 class Controller_Comments extends Controller
 {
 
-    function __construct()
+    public function __construct()
     {
         $this->model = new Model_Comments();
         $this->view = new View();
     }
 
-    function action_index()
+    public function action_index()
     {
         session_start();
         if (isset($_SESSION["id"])) {

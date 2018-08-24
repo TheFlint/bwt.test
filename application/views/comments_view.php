@@ -8,4 +8,3 @@
                  <div class=\"comment-text\">{$val["text"]}</div>
             </div>";
     }
-

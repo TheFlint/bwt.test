@@ -6,7 +6,7 @@
             <div class="city-name ">
                 <h1>Погода в Запорожье</h1>
             </div>
-            <? print_r($data); ?>
+            <?php print_r($data); ?>
             <div class="fbottom">.</div>
         </div>
     </div>

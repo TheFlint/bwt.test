@@ -8,7 +8,7 @@
  */
 Class Model_SignUp extends Model
 {
-    function sign_up()
+    function signUp()
     {
         $access["signup_status"] = "";
 

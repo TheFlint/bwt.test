@@ -21,7 +21,7 @@ class Model_Main extends Model
         return str_replace($search, "", $str);
     }
 
-    function getWeather()
+    public function getWeather()
     {
         $weather = $this->cutFrom(
             (file_get_contents('http://www.gismeteo.ua/city/daily/5093/')),

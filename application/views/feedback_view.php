@@ -9,10 +9,10 @@
                     <div class="col-lg-8 col-md-8 col-sm-12 right">
                         <?php extract($data); ?>
                         <?php // var_dump($data); ?>
-                        <?php if ($result == "sanded") { ?>
+                        <?php if ($result == "Sent") { ?>
                             <p style="color:green">Успешно.</p>
-                        <?php } elseif ($result == "fill_all_fields") ?>
-                            <p style="color:red">fill all fields.</p>
+                        <?php }  ?>
+
                         <div class="form-group">
                             <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="name"
                                    required>

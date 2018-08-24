@@ -6,9 +6,15 @@
  * Date: 23.08.2018
  * Time: 23:37
  */
+
+namespace  Application\Models;
+
+use Application\Core\Model;
+use PDO;
+
 Class Model_FeedBack extends Model
 {
-    public function get_data()
+    public static function get_data()
     {
         $feedback["result"] = '';
         if (isset($_POST['email']) && isset($_POST['name']) && isset($_POST['text'])) {
@@ -20,9 +26,8 @@ Class Model_FeedBack extends Model
             $db = new PDO('mysql:host=192.168.1.105;dbname=bwttestbase', 'root', '');
             $sql = "INSERT INTO comments (name, email, text) VALUES (\"{$name}\",\"{$email}\",\"{$text}\")";
             $query = $db->query($sql) or die("failed!");
-            $feedback["result"] = "sanded";
 
-            header('Location:/feedback/');
+            $feedback["result"] = "Sent";
         }
         return $feedback;
 

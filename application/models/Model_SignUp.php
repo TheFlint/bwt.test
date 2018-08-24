@@ -6,9 +6,15 @@
  * Date: 24.08.2018
  * Time: 0:15
  */
+
+namespace Application\Models;
+
+use Application\Core\Model;
+use PDO;
+
 Class Model_SignUp extends Model
 {
-    function signUp()
+    public static function signUp()
     {
         $access["signup_status"] = "";
 

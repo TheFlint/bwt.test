@@ -56,6 +56,7 @@
 <div class="page">
     <div class="overlay"></div>
     <div class="content">
+        <?php $content_view = \Application\Core\View::$contentView; ?>
         <?php require_once 'application/views/' . $content_view; ?>
     </div>
 </div>

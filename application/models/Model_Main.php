@@ -6,6 +6,11 @@
  * Date: 23.08.2018
  * Time: 16:38
  */
+
+namespace Application\Models;
+
+use Application\Core\Model;
+
 class Model_Main extends Model
 {
     private function cutFrom($file, $from, $to)
@@ -21,9 +26,9 @@ class Model_Main extends Model
         return str_replace($search, "", $str);
     }
 
-    public function getWeather()
+    public static function getWeather()
     {
-        $weather = $this->cutFrom(
+        $weather = self::cutFrom(
             (file_get_contents('http://www.gismeteo.ua/city/daily/5093/')),
             "<div class=\"wsection wdata\">",
             "<div class=\"section bottom\">"

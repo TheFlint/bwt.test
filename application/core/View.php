@@ -6,11 +6,14 @@
  * Time: 16:32
  */
 
+namespace Application\Core;
+
 class View
 {
+    public static $contentView;
 //public $template_view; // здесь можно указать общий вид по умолчанию.
 
-    public function generate($contentView, $templateView, $title,$data = null)
+    public static function generate($contentView, $templateView, $title, $data = null)
     {
         /*
         if(is_array($data)) {
@@ -18,7 +21,8 @@ class View
             extract($data);
         }
         */
+        self::$contentView = $contentView;
 
-        include 'application/views/'.$templateView;
+        include 'application/views/' . $templateView;
     }
 }

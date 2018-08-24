@@ -6,17 +6,14 @@
  * Time: 16:33
  */
 
+namespace Application\Core;
+
 class Controller
 {
     public $model;
     public $view;
 
-    public function __construct()
-    {
-        $this->view = new View();
-    }
-
-    public function action_index()
+    public static function action_index()
     {
     }
 }

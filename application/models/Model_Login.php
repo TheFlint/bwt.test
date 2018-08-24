@@ -6,18 +6,23 @@
  * Date: 23.08.2018
  * Time: 23:00
  */
+
+namespace Application\Models;
+ use Application\Core\Model;
+ use PDO;
+
 Class Model_Login extends Model
 {
-    public function signIn()
+    public static function signIn()
     {
         $access["login_status"] = "";
-        if (isset($_POST['g-recaptcha-response'])) {
-            $url_to_google_api = "https://www.google.com/recaptcha/api/siteverify";
-            $secret_key = '6Lf58moUAAAAAEwdzk03o804zIpl6-S3isMF_EA7';
-            $query = $url_to_google_api . '?secret=' . $secret_key . '&response=' . $_POST['g-recaptcha-response'] . '&remoteip=' . $_SERVER['REMOTE_ADDR'];
-            $data = json_decode(file_get_contents($query));
-
-            if ($data->success) {
+//        if (isset($_POST['g-recaptcha-response'])) {
+//            $url_to_google_api = "https://www.google.com/recaptcha/api/siteverify";
+//            $secret_key = '6Lf58moUAAAAAEwdzk03o804zIpl6-S3isMF_EA7';
+//            $query = $url_to_google_api . '?secret=' . $secret_key . '&response=' . $_POST['g-recaptcha-response'] . '&remoteip=' . $_SERVER['REMOTE_ADDR'];
+//            $data = json_decode(file_get_contents($query));
+//
+//            if ($data->success) {
                 if (isset($_POST['email']) && isset($_POST['password'])) {
                     $email = $_POST['email'];
                     $password = md5($_POST['password']);
@@ -36,11 +41,11 @@ Class Model_Login extends Model
                     }
 
                 }
-            } else {
-                $access["login_status"] = 'reCaptcha_error';
-            }
-
-        }
+//            } else {
+//                $access["login_status"] = 'reCaptcha_error';
+//            }
+//
+//        }
         return $access;
     }
 }

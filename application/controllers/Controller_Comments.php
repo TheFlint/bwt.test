@@ -26,3 +26,4 @@ class Controller_Comments extends Controller
         }
     }
 }
+

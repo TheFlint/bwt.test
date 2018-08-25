@@ -1,5 +1,5 @@
 <?php
-    foreach ($data as $val) {
+    foreach (\Application\Core\View::$data as $val) {
         echo
         "
             <div class=\"comment\">

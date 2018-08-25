@@ -7,7 +7,7 @@
                         <h1>Get in Touch</h1>
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 right">
-                        <?php extract($data); ?>
+                        <?php extract(\Application\Core\View::$data); ?>
                         <?php // var_dump($data); ?>
                         <?php if ($result == "Sent") { ?>
                             <p style="color:green">Успешно.</p>

@@ -11,18 +11,16 @@ namespace Application\Core;
 class View
 {
     public static $contentView;
+    public static $data;
+    public static $title;
 //public $template_view; // здесь можно указать общий вид по умолчанию.
 
     public static function generate($contentView, $templateView, $title, $data = null)
     {
-        /*
-        if(is_array($data)) {
-            // преобразуем элементы массива в переменные
-            extract($data);
-        }
-        */
         self::$contentView = $contentView;
-
-        include 'application/views/' . $templateView;
+        self::$data = $data;
+        self::$title = $title;
+        Autoloader::setPath('application/views/');
+        Autoloader::loader($templateView);
     }
 }

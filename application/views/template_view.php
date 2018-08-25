@@ -27,7 +27,7 @@
     <script src="/js/main.js" type="text/javascript"></script>
 
     <meta charset="utf-8">
-    <title><?=$title?></title>
+    <title><?=\Application\Core\View::$title?></title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top ">
@@ -56,8 +56,8 @@
 <div class="page">
     <div class="overlay"></div>
     <div class="content">
-        <?php $content_view = \Application\Core\View::$contentView; ?>
-        <?php require_once 'application/views/' . $content_view; ?>
+        <?php \Application\Core\Autoloader::setPath('application/views') ?>
+        <?php \Application\Core\Autoloader::loader(\Application\Core\View::$contentView)?>
     </div>
 </div>
 </body>

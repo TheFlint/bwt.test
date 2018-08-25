@@ -6,8 +6,9 @@
  * Time: 16:38
  */
 
-namespace Application\Models;
-use Application\Core\Model;
+namespace Flint\Application\Models;
+
+use Flint\Application\Core\Model;
 use PDO;
 
 class Model_Comments extends Model

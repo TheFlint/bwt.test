@@ -6,7 +6,7 @@
  * Time: 16:32
  */
 
-namespace Application\Core;
+namespace Flint\Application\Core;
 
 class Model
 {

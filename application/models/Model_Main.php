@@ -7,9 +7,9 @@
  * Time: 16:38
  */
 
-namespace Application\Models;
+namespace Flint\Application\Models;
 
-use Application\Core\Model;
+use Flint\Application\Core\Model;
 
 class Model_Main extends Model
 {

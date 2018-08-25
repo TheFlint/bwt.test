@@ -10,7 +10,7 @@
                         <h6>To use my site you are need to authorize or if didn't register, please, use <a
                                     href="/signup/">registration
                                 form</a>.</h6>
-                        <?php extract(\Application\Core\View::$data); ?>
+                        <?php extract(\Flint\Application\Core\View::$data); ?>
                         <?php // var_dump($data); ?>
                         <?php if ($login_status == "access_granted") { ?>
                             <p style="color:green">Авторизация прошла успешно.</p>

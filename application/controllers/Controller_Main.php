@@ -6,29 +6,23 @@
  * Time: 16:36
  */
 
-namespace Application\Controllers;
+namespace Flint\Application\Controllers;
 
-use Application\Core\Controller;
-use Application\Core\View;
-use Application\Models\Model_Main;
+use Flint\Application\Core\Controller;
+use Flint\Application\Core\View;
+use Flint\Application\Models\Model_Main;
 
-class Controller_main extends Controller
+class Controller_Main extends Controller
 {
-//    public function __construct()
-//    {
-//        $this->model = new Model_Main();
-//        $this->view = new View();
-//    }
-
     public static function action_index()
     {
         session_start();
         if (isset($_SESSION["id"])) {
-           // $data = $this->model->getWeather();
+            // $data = $this->model->getWeather();
             $data = Model_Main::getWeather();
 //            $this->view->generate('main_view.php', 'template_view.php', "Home", $data);
             View::generate('main_view.php', 'template_view.php', "Home", $data);
-        }else{
+        } else {
             header('Location:/login/');
         }
     }

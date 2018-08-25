@@ -27,7 +27,7 @@
     <script src="/js/main.js" type="text/javascript"></script>
 
     <meta charset="utf-8">
-    <title><?=\Application\Core\View::$title?></title>
+    <title><?= \Flint\Application\Core\View::$title ?></title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top ">
@@ -56,8 +56,8 @@
 <div class="page">
     <div class="overlay"></div>
     <div class="content">
-        <?php \Application\Core\Autoloader::setPath('application/views') ?>
-        <?php \Application\Core\Autoloader::loader(\Application\Core\View::$contentView)?>
+        <?php \Flint\Application\Core\Autoloader::setPath('application/views') ?>
+        <?php \Flint\Application\Core\Autoloader::loader(\Flint\Application\Core\View::$contentView) ?>
     </div>
 </div>
 </body>

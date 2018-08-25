@@ -7,20 +7,14 @@
  * Time: 16:35
  */
 
-namespace Application\Controllers;
+namespace Flint\Application\Controllers;
 
-use Application\Core\Controller;
-use Application\Core\View;
-use Application\Models\Model_FeedBack;
+use Flint\Application\Core\Controller;
+use Flint\Application\Core\View;
+use Flint\Application\Models\Model_FeedBack;
 
 Class Controller_FeedBack extends Controller
 {
-//    public function __construct()
-//    {
-//        $this->model = new Model_FeedBack();
-//        $this->view = new View();
-//    }
-
     public static function action_index()
     {
         session_start();

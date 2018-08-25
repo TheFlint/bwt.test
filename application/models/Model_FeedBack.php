@@ -7,9 +7,9 @@
  * Time: 23:37
  */
 
-namespace  Application\Models;
+namespace Flint\Application\Models;
 
-use Application\Core\Model;
+use Flint\Application\Core\Model;
 use PDO;
 
 Class Model_FeedBack extends Model

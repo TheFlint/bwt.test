@@ -6,21 +6,15 @@
  * Date: 23.08.2018
  * Time: 16:36
  */
-namespace Application\Controllers;
 
-use Application\Core\Controller;
-use Application\Core\View;
-use Application\Models\Model_Comments;
+namespace Flint\Application\Controllers;
+
+use Flint\Application\Core\Controller;
+use Flint\Application\Core\View;
+use Flint\Application\Models\Model_Comments;
 
 class Controller_Comments extends Controller
 {
-
-//    public function __construct()
-//    {
-//        $this->model = new Model_Comments();
-//        $this->view = new View();
-//    }
-
     public static function action_index()
     {
         session_start();

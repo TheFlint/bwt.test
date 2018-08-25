@@ -1,14 +1,15 @@
 <?php
-
-namespace bootstrap;
 /**
  * Created by PhpStorm.
  * User: Flint
  * Date: 23.08.2018
  * Time: 16:25
  */
-use Application\Core\Route;
-use Application\Core\Autoloader;
+
+namespace bootstrap;
+
+use Flint\Application\Core\Route;
+use Flint\Application\Core\Autoloader;
 
 Autoloader::setPath('application/core');
 Autoloader::loader('Model');

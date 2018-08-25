@@ -7,9 +7,9 @@
  * Time: 0:15
  */
 
-namespace Application\Models;
+namespace Flint\Application\Models;
 
-use Application\Core\Model;
+use Flint\Application\Core\Model;
 use PDO;
 
 Class Model_SignUp extends Model
@@ -42,8 +42,16 @@ Class Model_SignUp extends Model
                         $password = trim(stripslashes(strip_tags(htmlspecialchars(addslashes(md5($_POST['password']))))));
 
 
-                        if (isset($_POST['sex'])) $sex = $_POST['sex']; else $sex = 'null';
-                        if (isset($_POST['date'])) $date = $_POST['date']; else $date = 'null';
+                        if (isset($_POST['sex'])) {
+                            $sex = $_POST['sex'];
+                        } else {
+                            $sex = 'null';
+                        }
+                        if (isset($_POST['date'])) {
+                            $date = $_POST['date'];
+                        } else {
+                            $date = 'null';
+                        }
                         $sql = "INSERT INTO user (name,email,password,sex,birthdate) VALUES (\"{$name}\",\"{$email}\",\"{$password}\",\"{$sex}\",\"{$date}\")";
                         $query = $db->query($sql) or die("failed2!");;
                         $access["signup_status"] = 'registered';

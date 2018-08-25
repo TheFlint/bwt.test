@@ -6,7 +6,7 @@
  * Time: 16:33
  */
 
-namespace Application\Core;
+namespace Flint\Application\Core;
 
 class Controller
 {

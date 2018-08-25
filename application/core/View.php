@@ -6,13 +6,14 @@
  * Time: 16:32
  */
 
-namespace Application\Core;
+namespace Flint\Application\Core;
 
 class View
 {
     public static $contentView;
     public static $data;
     public static $title;
+
 //public $template_view; // здесь можно указать общий вид по умолчанию.
 
     public static function generate($contentView, $templateView, $title, $data = null)

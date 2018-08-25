@@ -7,7 +7,7 @@
                     <div class="col-lg-2 col-md-2 col-sm-12"></div>
                     <div class="col-lg-8 col-md-8 col-sm-12 right">
                         <h1>Sign Up</h1>
-                        <?php extract(\Application\Core\View::$data); ?>
+                        <?php extract(\Flint\Application\Core\View::$data); ?>
                         <?php // var_dump($data); ?>
                         <?php if ($signup_status == "registered") { ?>
                             <p style="color:green">Регистрация прошла успешно.</p>

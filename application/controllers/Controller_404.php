@@ -7,10 +7,10 @@
  * Time: 16:35
  */
 
-namespace Application\Controllers;
+namespace Flint\Application\Controllers;
 
-use Application\Core\Controller;
-use Application\Core\View;
+use Flint\Application\Core\Controller;
+use Flint\Application\Core\View;
 
 
 class Controller_404 extends Controller

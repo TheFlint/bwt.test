@@ -6,7 +6,7 @@
  * Time: 16:29
  */
 
-namespace Application\Core;
+namespace Flint\Application\Core;
 
 use Exception;
 
@@ -24,7 +24,7 @@ class Route
         if (Autoloader::loader($controllerName) == false) {
             throw new ConnectControllerException('error404');
         }
-        $controller = 'Application\Controllers\\' . $controllerName;
+        $controller = 'Flint\Application\Controllers\\' . $controllerName;
         $controller::$actionName();
     }
 
@@ -50,7 +50,7 @@ class Route
 
         Autoloader::setPath('application/models');
         Autoloader::loader($modeName);
-        $model = 'Application\Controllers\\' . $modeName;
+        $model = 'Flint\Application\Controllers\\' . $modeName;
 
         try {
             self::connectController($controllerName, $actionName);

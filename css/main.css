@@ -67,9 +67,11 @@ html, h1, h2, h3, h4, h5, h6, a {
     top: 0;
     background: rgba(244, 244, 244, 0.79);
 }
-.content{
+
+.content {
     position: relative;
 }
+
 .description {
     /*position: relative;*/
     padding-top: 5em;
@@ -88,7 +90,7 @@ html, h1, h2, h3, h4, h5, h6, a {
     line-height: 1.5;
 }
 
-h6{
+h6 {
     font-size: 24px;
     text-align: center;
     color: #F97300;
@@ -122,6 +124,7 @@ h6{
     color: #888;
     font-size: 16px;
 }
+
 /*contact form*/
 .contact-form {
     /*position: ;*/
@@ -183,7 +186,7 @@ h6{
 .weather {
     position: relative;
     align-self: center;
-    overflow:hidden;
+    overflow: hidden;
     border-radius: 20px 2px 20px 2px;
     /*margin-right: 10%;*/
     /*margin-left: 10%;*/
@@ -192,7 +195,8 @@ h6{
     background-color: aliceblue;
 
 }
-.weather .fdate, .fbottom{
+
+.weather .fdate, .fbottom {
     background-color: #F97300;
     font-size: 18px;
     color: white;
@@ -202,33 +206,41 @@ h6{
     /*padding-bottom: 5px;*/
     margin: 3px
 }
+
 .weather .fdate {
     border-radius: 20px 2px 0 0;
 }
-.weather .fbottom{
+
+.weather .fbottom {
     border-radius: 0 0 20px 2px;
 }
-.weather .city-name{
+
+.weather .city-name {
 
 }
-.weather h1{
+
+.weather h1 {
     color: #F97300;
 }
-.weather thead{
+
+.weather thead {
     font-size: 12px;
 }
-.weather .wsection{
+
+.weather .wsection {
     margin: 1em;
     font-size: 1.2em;
 }
-.weather .wrow{
+
+.weather .wrow {
     border-top: 1px solid #F97300;
 }
-.weather .fbottom{
+
+.weather .fbottom {
     color: #F97300;
 }
 
-.g-recaptcha{
+.g-recaptcha {
     margin: 1em !important;
     width: 100% !important;
     height: auto !important;

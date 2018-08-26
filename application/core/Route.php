@@ -8,26 +8,11 @@
 
 namespace Flint\Application\Core;
 
-use Exception;
-
-
-class ConnectControllerException extends Exception
-{
-}
+use Flint\Application\Functional\Autoloader;
+use Flint\application\functional\ApplicationException;
 
 class Route
 {
-    private static function connectController($controllerName, $actionName)
-    {
-        Autoloader::setPath("application/controllers");
-
-        if (Autoloader::loader($controllerName) == false) {
-            throw new ConnectControllerException('error404');
-        }
-        $controller = 'Flint\Application\Controllers\\' . $controllerName;
-        $controller::$actionName();
-    }
-
     public static function start()
     {
 
@@ -53,8 +38,8 @@ class Route
         $model = 'Flint\Application\Controllers\\' . $modeName;
 
         try {
-            self::connectController($controllerName, $actionName);
-        } catch (ConnectControllerException $exception) {
+            ApplicationException::connectController($controllerName, $actionName);
+        } catch (ApplicationException $exception) {
             route::ErrorPage404();
         };
 

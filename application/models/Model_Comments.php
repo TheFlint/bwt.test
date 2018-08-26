@@ -9,21 +9,12 @@
 namespace Flint\Application\Models;
 
 use Flint\Application\Core\Model;
-use PDO;
+use Flint\Application\Functional\DataBase;
 
 class Model_Comments extends Model
 {
-    public static function get_data()
+    public static function getComments()
     {
-        $db = new PDO('mysql:host=192.168.1.105;dbname=bwttestbase', 'root', '');
-        $sql = "SELECT * FROM comments ORDER BY id";
-        $query = $db->query($sql);
-        $data = array();
-        $i = 0;
-        while ($result = $query->fetch(PDO::FETCH_ASSOC)) {
-            $data[$i] = $result;
-            $i++;
-        }
-        return $data;
+        return DataBase::getComments();
     }
 }

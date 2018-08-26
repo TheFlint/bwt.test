@@ -19,7 +19,7 @@ class Controller_Comments extends Controller
     {
         session_start();
         if (isset($_SESSION["id"])) {
-            $data = Model_Comments::get_data();
+            $data = Model_Comments::getComments();
             View::generate('comments_view.php', 'template_view.php', "comments", $data);
         } else {
             header('Location:/login/');

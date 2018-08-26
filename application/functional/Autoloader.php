@@ -6,7 +6,7 @@
  * Time: 18:19
  */
 
-namespace Flint\Application\Core;
+namespace Flint\Application\Functional;
 
 class Autoloader
 {
@@ -37,4 +37,4 @@ class Autoloader
 
 }
 
-\spl_autoload_register('Flint\Application\Core\Autoloader::loader');
+\spl_autoload_register('Flint\Application\Functional\Autoloader::loader');

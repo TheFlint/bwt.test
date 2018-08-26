@@ -10,6 +10,7 @@
 namespace Flint\Application\Models;
 
 use Flint\Application\Core\Model;
+use Flint\Application\Functional\DataBase;
 use PDO;
 
 Class Model_Login extends Model
@@ -27,10 +28,9 @@ Class Model_Login extends Model
         if (isset($_POST['email']) && isset($_POST['password'])) {
             $email = $_POST['email'];
             $password = md5($_POST['password']);
-            $db = new PDO('mysql:host=192.168.1.105;dbname=bwttestbase', 'root', '');
-            $sql = "SELECT `id`,`email`,`password` FROM `user` WHERE `email`=\"{$email}\" AND `password`= \"{$password}\"";;
-            $query = $db->query($sql) or die("failed!");
-            $result = $query->fetch(PDO::FETCH_ASSOC);
+
+            $result = DataBase::login(array('email' => $email, 'password' => $password));
+
             if ($result > 0) {
                 $access["login_status"] = "access_granted";
                 session_set_cookie_params(3600);

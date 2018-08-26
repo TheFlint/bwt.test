@@ -7,6 +7,7 @@
  */
 
 namespace Flint\Application\Core;
+use Flint\Application\Functional\Autoloader;
 
 class View
 {

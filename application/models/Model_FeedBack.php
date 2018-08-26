@@ -10,7 +10,8 @@
 namespace Flint\Application\Models;
 
 use Flint\Application\Core\Model;
-use PDO;
+use Flint\Application\Functional\DataBase;
+
 
 Class Model_FeedBack extends Model
 {
@@ -23,11 +24,7 @@ Class Model_FeedBack extends Model
             $email = trim(stripslashes(strip_tags(htmlspecialchars(addslashes($_POST['email'])))));
             $text = trim(stripslashes(strip_tags(htmlspecialchars(addslashes($_POST['text'])))));
 
-            $db = new PDO('mysql:host=192.168.1.105;dbname=bwttestbase', 'root', '');
-            $sql = "INSERT INTO comments (name, email, text) VALUES (\"{$name}\",\"{$email}\",\"{$text}\")";
-            $query = $db->query($sql) or die("failed!");
-
-            $feedback["result"] = "Sent";
+            $feedback["result"] = DataBase::sendFeedBack(array('name' => $name, 'email' => $email, 'text' => $text));
         }
         return $feedback;
 

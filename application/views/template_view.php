@@ -56,8 +56,8 @@
 <div class="page">
     <div class="overlay"></div>
     <div class="content">
-        <?php \Flint\Application\Core\Autoloader::setPath('application/views') ?>
-        <?php \Flint\Application\Core\Autoloader::loader(\Flint\Application\Core\View::$contentView) ?>
+        <?php \Flint\Application\Functional\Autoloader::setPath('application/views') ?>
+        <?php \Flint\Application\Functional\Autoloader::loader(\Flint\Application\Core\View::$contentView) ?>
     </div>
 </div>
 </body>

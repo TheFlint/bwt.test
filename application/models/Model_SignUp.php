@@ -59,5 +59,4 @@ Class Model_SignUp extends Model
         }
         return $access;
     }
-
 }

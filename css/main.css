@@ -21,7 +21,7 @@ html, h1, h2, h3, h4, h5, h6, a {
 }
 
 .navbar {
-    background: #F97300;
+    background: #e85f63;
 }
 
 .nav-link, .navbar-brand {
@@ -30,17 +30,19 @@ html, h1, h2, h3, h4, h5, h6, a {
 }
 
 .navbar-brand {
+    font-size: 2.5em;
     padding-right: 0.3em !important;
     padding-left: 0.3em !important;
 }
 
 .nav-link {
+    font-size: 1.2em;
     margin-right: 1em !important;
 }
 
 .navbar-brand:hover, .nav-link:hover {
     background: #f4f4f4;
-    color: #f97300;
+    color: #e85f63;
 }
 
 .navbar-collapse {
@@ -59,7 +61,6 @@ html, h1, h2, h3, h4, h5, h6, a {
 }
 
 .overlay {
-    /*background-size: cover;*/
     position: absolute;
     min-height: 100%;
     min-width: 100%;
@@ -73,14 +74,13 @@ html, h1, h2, h3, h4, h5, h6, a {
 }
 
 .description {
-    /*position: relative;*/
     padding-top: 5em;
     margin-right: 10%;
     margin-left: 10%;
 }
 
 .description h1 {
-    color: #F97300;
+    color: black;
 }
 
 .description p {
@@ -93,21 +93,20 @@ html, h1, h2, h3, h4, h5, h6, a {
 h6 {
     font-size: 24px;
     text-align: center;
-    color: #F97300;
+    color: black;
     position: relative;
 }
 
 /*authorize-form*/
 .authorize-form {
-    /*position: ;*/
-    /*padding-top: 2em;*/
-    /*padding-bottom: 3em;*/
+
 }
 
 .authorize-form h1 {
+    font-weight: bold;
     text-align: center;
-    padding: 2em 1px;
-    color: #F97300;
+    padding-top: 7em;
+    color: black;
 }
 
 .authorize-form .right {
@@ -115,7 +114,7 @@ h6 {
 }
 
 .authorize-form .right .btn-secondary {
-    background: #F97300;
+    background: #e85f63;
     color: #fff;
     border: 0;
 }
@@ -127,14 +126,13 @@ h6 {
 
 /*contact form*/
 .contact-form {
-    /*position: ;*/
     padding-top: 15%;
 }
 
 .contact-form h1 {
     text-align: center;
     padding: 2em 1px;
-    color: #F97300;
+    color: #e85f63;
 }
 
 .contact-form .right {
@@ -142,7 +140,7 @@ h6 {
 }
 
 .contact-form .right .btn-secondary {
-    background: #F97300;
+    background: #e85f63;
     color: #fff;
     border: 0;
 }
@@ -154,13 +152,14 @@ h6 {
 
 /*Comments*/
 .comments {
-    padding-top: 10%;
+    padding-top: 7em;
 }
 
 .comments h1 {
+    font-weight: bold;
     text-align: center;
-    /*padding: 2em 1px;*/
-    color: #F97300;
+    color: #e85f63;
+    font-size: 5em;
 }
 
 .comment span {
@@ -170,40 +169,41 @@ h6 {
 
 .comment .name, .email {
     font-size: 1.5em;
-    color: #F97300;
+    color: #e85f63;
 }
 
 .comment .comment-text {
     margin-top: 0.5em;
     background-color: white;
     padding: 5px;
-    border: 2px solid #F97300;
+    border: 2px solid #e85f63;
     margin-bottom: 3em;
 
 }
 
 /*weather*/
 .weather {
+    padding-top: 10em;
+}
+
+.weather .weather_content {
     position: relative;
     align-self: center;
     overflow: hidden;
     border-radius: 20px 2px 20px 2px;
-    /*margin-right: 10%;*/
-    /*margin-left: 10%;*/
-    border: 2px solid #F97300;
-    /*padding: 1em;*/
+    border: 2px solid #e85f63;
     background-color: aliceblue;
+}
 
+.city-name h1{
+    font-weight: bold;
 }
 
 .weather .fdate, .fbottom {
-    background-color: #F97300;
+    background-color: #e85f63;
     font-size: 18px;
     color: white;
     padding: 7px;
-    /*padding-left: 10px;*/
-    /*padding-top: 5px;*/
-    /*padding-bottom: 5px;*/
     margin: 3px
 }
 
@@ -215,12 +215,8 @@ h6 {
     border-radius: 0 0 20px 2px;
 }
 
-.weather .city-name {
-
-}
-
 .weather h1 {
-    color: #F97300;
+    color: #e85f63;
 }
 
 .weather thead {
@@ -233,11 +229,11 @@ h6 {
 }
 
 .weather .wrow {
-    border-top: 1px solid #F97300;
+    border-top: 1px solid #e85f63;
 }
 
 .weather .fbottom {
-    color: #F97300;
+    color: #e85f63;
 }
 
 .g-recaptcha {

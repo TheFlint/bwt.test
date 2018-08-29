@@ -7,7 +7,6 @@
  */
 
 namespace Flint\Application\Core;
-use Flint\Application\Functional\Autoloader;
 
 class View
 {
@@ -22,7 +21,6 @@ class View
         self::$contentView = $contentView;
         self::$data = $data;
         self::$title = $title;
-        Autoloader::setPath('application/views/');
-        Autoloader::loader($templateView);
+        require_once ("application/views/{$templateView}");
     }
 }

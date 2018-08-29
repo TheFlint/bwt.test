@@ -18,9 +18,7 @@ class Controller_Main extends Controller
     {
         session_start();
         if (isset($_SESSION["id"])) {
-            // $data = $this->model->getWeather();
             $data = Model_Main::getWeather();
-//            $this->view->generate('main_view.php', 'template_view.php', "Home", $data);
             View::generate('main_view.php', 'template_view.php', "Home", $data);
         } else {
             header('Location:/login/');

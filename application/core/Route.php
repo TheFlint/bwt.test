@@ -8,8 +8,7 @@
 
 namespace Flint\Application\Core;
 
-use Flint\Application\Functional\Autoloader;
-use Flint\application\functional\ApplicationException;
+use Flint\Application\Functional\ApplicationException;
 
 class Route
 {
@@ -32,10 +31,9 @@ class Route
         $controllerName = 'Controller_' . $controllerName;
         $actionName = 'action_' . $actionName;
 
-
-        Autoloader::setPath('application/models');
-        Autoloader::loader($modeName);
         $model = 'Flint\Application\Controllers\\' . $modeName;
+
+
 
         try {
             ApplicationException::connectController($controllerName, $actionName);

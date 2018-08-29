@@ -6,19 +6,20 @@
  * Time: 14:37
  */
 
-namespace Flint\application\functional;
+namespace Flint\Application\Functional;
 
 
 class ApplicationException extends \Exception
 {
     public static function connectController($controllerName, $actionName)
     {
-        Autoloader::setPath("application/controllers");
+        $controller = 'Flint\Application\Controllers\\' . $controllerName;
+        $controllerFile = strtolower($controllerName).'.php';
+        $controllerPath = "application/controllers/".$controllerFile;
 
-        if (Autoloader::loader($controllerName) == false) {
+        if (!file_exists($controllerPath)) {
             throw new ApplicationException('error404');
         }
-        $controller = 'Flint\Application\Controllers\\' . $controllerName;
         $controller::$actionName();
     }
 }

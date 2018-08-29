@@ -10,31 +10,31 @@ namespace Flint\Application\Functional;
 
 class Autoloader
 {
-    protected static $fileExt = '.php';
-
-    protected static $pathTop = __DIR__;
-
-    public static function setPath($path)
-    {
-        static::$pathTop = $path;
-    }
-
     public static function loader($className)
     {
-        $exploded = explode('.', $className);
-        if ($exploded[1] == 'php') {
-            self::$fileExt = '';
-        }
+        $exploded = explode('\\', $className);
+        unset($exploded[0]);
 
-        $file = static::$pathTop . '/' . $className . static::$fileExt;
-        if (file_exists($file)) {
-            require_once $file;
-            return true;
-        } else {
-            return false;
+        switch ($exploded[2]) {
+            case 'Controllers':
+
+                require implode(DIRECTORY_SEPARATOR, $exploded) . '.php';
+                break;
+            case 'Core':
+                require implode(DIRECTORY_SEPARATOR, $exploded) . '.php';
+                break;
+            case 'Functional':
+
+                require implode(DIRECTORY_SEPARATOR, $exploded) . '.php';
+                break;
+            case 'Models':
+
+                require implode(DIRECTORY_SEPARATOR, $exploded) . '.php';
+                break;
+            default:
+                return false;
         }
     }
-
 }
 
 \spl_autoload_register('Flint\Application\Functional\Autoloader::loader');

@@ -14,7 +14,6 @@ class Route
 {
     public static function start()
     {
-
         $controllerName = 'Main';
         $actionName = 'index';
         $routes = explode('/', $_SERVER['REQUEST_URI']);
@@ -27,20 +26,24 @@ class Route
             $actionName = $routes[2];
         }
 
-        $modeName = 'Model_' . $controllerName;
-        $controllerName = 'Controller_' . $controllerName;
-        $actionName = 'action_' . $actionName;
+        $modeName = $controllerName.'Model';
+        $controllerName =  $controllerName.'Controller';
 
         $model = 'Flint\Application\Controllers\\' . $modeName;
+        $controller = 'Flint\Application\Controllers\\' . $controllerName;
 
-
+        try {
+            ApplicationException::checkAction($controller,$actionName);
+        } catch (ApplicationException $exception){
+            Route::ErrorPage404();
+        }
 
         try {
             ApplicationException::connectController($controllerName, $actionName);
+            $controller::$actionName();
         } catch (ApplicationException $exception) {
-            route::ErrorPage404();
-        };
-
+            Route::ErrorPage404();
+        }
     }
 
     public static function ErrorPage404()
@@ -48,6 +51,6 @@ class Route
         $host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
         header('HTTP/1.1 404 Not Found');
         header("Status: 404 Not Found");
-        header('Location:' . $host . '404');
+        header('Location:' . $host . 'Error404');
     }
 }

@@ -10,13 +10,13 @@ namespace Flint\Application\Controllers;
 
 use Flint\Application\Core\Controller;
 use Flint\Application\Core\View;
-use Flint\Application\Models\Model_SignUp;
+use Flint\Application\Models\SignUpModel;
 
-class Controller_SignUp extends Controller
+class SignUpController extends Controller
 {
-    public static function action_index()
+    public static function index()
     {
-        $data = Model_SignUp::signUp();
+        $data = SignUpModel::signUp();
         View::generate('signup_view.php', 'template_view.php', "Sign Up", $data);
     }
 

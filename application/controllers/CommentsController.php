@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Flint
@@ -10,18 +11,19 @@ namespace Flint\Application\Controllers;
 
 use Flint\Application\Core\Controller;
 use Flint\Application\Core\View;
-use Flint\Application\Models\Model_Main;
+use Flint\Application\Models\CommentsModel;
 
-class Controller_Main extends Controller
+class CommentsController extends Controller
 {
-    public static function action_index()
+    public static function index()
     {
         session_start();
         if (isset($_SESSION["id"])) {
-            $data = Model_Main::getWeather();
-            View::generate('main_view.php', 'template_view.php', "Home", $data);
+            $data = CommentsModel::getComments();
+            View::generate('comments_view.php', 'template_view.php', "comments", $data);
         } else {
             header('Location:/login/');
         }
     }
 }
+

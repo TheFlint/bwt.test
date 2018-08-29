@@ -11,7 +11,7 @@ namespace Flint\Application\Models;
 
 use Flint\Application\Core\Model;
 
-class Model_Main extends Model
+class MainModel extends Model
 {
     private function cutFrom($file, $from, $to)
     {

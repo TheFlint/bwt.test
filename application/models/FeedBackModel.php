@@ -12,8 +12,7 @@ namespace Flint\Application\Models;
 use Flint\Application\Core\Model;
 use Flint\Application\Functional\DataBase;
 
-
-Class Model_FeedBack extends Model
+Class FeedBackModel extends Model
 {
     public static function get_data()
     {

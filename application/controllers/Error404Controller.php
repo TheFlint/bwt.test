@@ -12,10 +12,9 @@ namespace Flint\Application\Controllers;
 use Flint\Application\Core\Controller;
 use Flint\Application\Core\View;
 
-
-class Controller_404 extends Controller
+class Error404Controller extends Controller
 {
-    public static function action_index()
+    public static function index()
     {
         View::generate('404_view.php', 'template_view.php', 'Page not found');
     }

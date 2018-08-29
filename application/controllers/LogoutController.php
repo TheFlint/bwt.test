@@ -9,12 +9,11 @@
 namespace Flint\Application\Controllers;
 
 use Flint\Application\Core\Controller;
-use Flint\Application\Core\View;
 
-Class Controller_Logout extends Controller
+Class LogoutController extends Controller
 {
 
-    public static function action_index()
+    public static function index()
     {
         session_start();
         session_destroy();

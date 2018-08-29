@@ -87,7 +87,10 @@ class DataBase
         if ($sth->fetch(PDO::FETCH_ASSOC) > 0) {
             return false;
         } else {
-            $sql = "INSERT INTO user (name, email, password, sex, birthdate) VALUES (:name,:email,:password, :sex, :date)";
+            $sql = "
+                    INSERT INTO user (name, email, password, sex, birthdate)
+                    VALUES (:name,:email,:password, :sex, :date)
+                    ";
 
             $sth = $pdo->_instance->prepare($sql);
             $sth->execute($execute);

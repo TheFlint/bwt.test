@@ -11,7 +11,7 @@ namespace Flint\Application\Models;
 use Flint\Application\Core\Model;
 use Flint\Application\Functional\DataBase;
 
-class Model_Comments extends Model
+class CommentsModel extends Model
 {
     public static function getComments()
     {

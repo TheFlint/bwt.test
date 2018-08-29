@@ -4,14 +4,15 @@ namespace Flint\Application\Controllers;
 
 use Flint\Application\Core\Controller;
 use Flint\Application\Core\View;
-use Flint\Application\Models\Model_Login;
+use Flint\Application\Models\LoginModel;
 
-class Controller_Login extends Controller
+class LoginController extends Controller
 {
-    public static function action_index()
+    public static function index()
     {
-        $data = Model_Login::signIn();
+        $data = LoginModel::signIn();
         View::generate('login_view.php', 'template_view.php', "Sign in", $data);
     }
 
 }
+  

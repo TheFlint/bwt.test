@@ -12,8 +12,7 @@ namespace Flint\Application\Models;
 use Flint\Application\Core\Model;
 use Flint\Application\Functional\DataBase;
 
-
-Class Model_SignUp extends Model
+Class SignUpModel extends Model
 {
     public static function signUp()
     {

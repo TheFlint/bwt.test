@@ -14,26 +14,7 @@ class Autoloader
     {
         $exploded = explode('\\', $className);
         unset($exploded[0]);
-
-        switch ($exploded[2]) {
-            case 'Controllers':
-
-                require implode(DIRECTORY_SEPARATOR, $exploded) . '.php';
-                break;
-            case 'Core':
-                require implode(DIRECTORY_SEPARATOR, $exploded) . '.php';
-                break;
-            case 'Functional':
-
-                require implode(DIRECTORY_SEPARATOR, $exploded) . '.php';
-                break;
-            case 'Models':
-
-                require implode(DIRECTORY_SEPARATOR, $exploded) . '.php';
-                break;
-            default:
-                return false;
-        }
+        require implode(DIRECTORY_SEPARATOR, $exploded) . '.php';
     }
 }
 

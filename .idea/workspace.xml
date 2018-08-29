@@ -3,32 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4a800e8f-6a7d-4592-979a-d4b0101f5963" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controller_404.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Controller_404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controller_Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Controller_Comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controller_FeedBack.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Controller_FeedBack.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controller_Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Controller_Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controller_Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Controller_Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controller_logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Controller_logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controller_signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Controller_signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/Route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/View.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/functional/ApplicationException.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/functional/ApplicationException.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/functional/Autoloader.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/functional/Autoloader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Model_Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Model_Comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Model_FeedBack.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Model_FeedBack.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Model_Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Model_Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Model_Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Model_Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Model_SignUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Model_SignUp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/comments_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/comments_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/feedback_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/feedback_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/login_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/login_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/main_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/signup_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/signup_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/template_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/template_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +89,7 @@
           <entry key="html" value="4" />
           <entry key="ini" value="8" />
           <entry key="js" value="2" />
-          <entry key="php" value="463" />
+          <entry key="php" value="464" />
           <entry key="ts" value="1" />
         </counts>
       </usages-collector>
@@ -124,7 +99,7 @@
           <entry key="HTML" value="4" />
           <entry key="Ini" value="8" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="463" />
+          <entry key="PHP" value="464" />
           <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
@@ -134,7 +109,7 @@
           <entry key="dummy" value="92" />
           <entry key="html" value="6" />
           <entry key="ini" value="74" />
-          <entry key="php" value="7443" />
+          <entry key="php" value="7469" />
           <entry key="txt" value="14" />
         </counts>
       </usages-collector>
@@ -143,7 +118,7 @@
           <entry key="CSS" value="150" />
           <entry key="HTML" value="6" />
           <entry key="Ini" value="74" />
-          <entry key="PHP" value="7443" />
+          <entry key="PHP" value="7469" />
           <entry key="PLAIN_TEXT" value="106" />
         </counts>
       </usages-collector>
@@ -156,20 +131,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/functional/ApplicationException.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="323">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Controller_Login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/functional/Autoloader.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
@@ -180,8 +164,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/core/Route.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="510">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -238,7 +222,6 @@
         <option value="$PROJECT_DIR$/application/core/Autoloader.php" />
         <option value="$PROJECT_DIR$/application/controllers/Controller_404.php" />
         <option value="$PROJECT_DIR$/application/controllers/Controller_FeedBack.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Controller_Login.php" />
         <option value="$PROJECT_DIR$/application/controllers/Controller_logout.php" />
         <option value="$PROJECT_DIR$/application/controllers/Controller_signup.php" />
         <option value="$PROJECT_DIR$/application/core/Controller.php" />
@@ -262,10 +245,11 @@
         <option value="$PROJECT_DIR$/application/controllers/Controller_Main.php" />
         <option value="$PROJECT_DIR$/application/core/View.php" />
         <option value="$PROJECT_DIR$/application/bootstrap.php" />
-        <option value="$PROJECT_DIR$/application/functional/Autoloader.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/application/core/Route.php" />
         <option value="$PROJECT_DIR$/application/functional/ApplicationException.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Controller_Login.php" />
+        <option value="$PROJECT_DIR$/application/functional/Autoloader.php" />
       </list>
     </option>
   </component>
@@ -395,12 +379,12 @@
       <workItem from="1535272463013" duration="18095000" />
       <workItem from="1535298821126" duration="444000" />
       <workItem from="1535377779313" duration="75000" />
-      <workItem from="1535563443837" duration="6121000" />
+      <workItem from="1535563443837" duration="7431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90918000" />
+    <option name="totallyTimeSpent" value="92228000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -572,13 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Controller_Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Controller_Main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -698,25 +675,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/core/Route.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="510">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/functional/ApplicationException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Controller_Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/functional/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/functional/ApplicationException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>

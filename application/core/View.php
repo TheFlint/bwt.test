@@ -14,8 +14,6 @@ class View
     public static $data;
     public static $title;
 
-//public $template_view; // здесь можно указать общий вид по умолчанию.
-
     public static function generate($contentView, $templateView, $title, $data = null)
     {
         self::$contentView = $contentView;

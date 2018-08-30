@@ -10,21 +10,18 @@ namespace Flint\Application\Functional;
 
 class ApplicationException extends \Exception
 {
-    public static function connectController($controllerName, $actionName)
+    public static function connectController($controllerName)
     {
+        $controllerPath = "application/controllers/".$controllerName.'.php';
 
-        $controllerFile = strtolower($controllerName).'.php';
-        $controllerPath = "application/controllers/".$controllerFile;
-
-        if (!file_exists($controllerPath)) {
+        if (false == file_exists($controllerPath)) {
             throw new ApplicationException('error404');
         }
-    }
 
+    }
     public static function  checkAction($controller,$actionName){
         if (!method_exists($controller,$actionName)){
             throw new ApplicationException('Action Error');
         }
     }
-
 }
